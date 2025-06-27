@@ -20,14 +20,12 @@ const projects = [
     description: "A voice-based chatbot that converts user speech to text, processes it with Gemini API, and responds back with speech. The interface is built using Gradio for interactive testing.",
     tech: ["Whisper.cpp", "Gemini API", "Coqui TTS", "Gradio", "Python"],
     github: "https://github.com/nouvalrfqi/VoiceChatbot",
-    website: "#"
   },
   {
     title: "Automatic Text Summarization for Indonesian News",
     description: "A summarization system for Indonesian news articles using the IndoT5-base model fine-tuned on IndoSum. Evaluated with ROUGE metrics and implemented in Colab.",
     tech: ["IndoT5", "IndoSum", "Transformers", "Google Colab", "Python"],
     github: "https://github.com/nouvalrfqi/AutomaticNewsSummarization",
-    website: "#"
   },
   {
     title: "Food Security Analysis in Aceh Using KNN Classification",
@@ -90,16 +88,6 @@ export default function Projects() {
               >
                 GitHub
               </a>
-              {project.website && (
-                <a
-                  href={project.website}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-xs px-4 py-1 rounded-full bg-white text-black border border-black hover:bg-black hover:text-white transition-colors duration-300"
-                >
-                  Website
-                </a>
-              )}
             </div>
           </motion.div>
         ))}

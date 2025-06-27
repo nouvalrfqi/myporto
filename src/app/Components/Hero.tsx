@@ -94,7 +94,7 @@ export default function Hero() {
             className="text-lg leading-relaxed text-gray-700"
           >
             Muhammad Nouval Rifqi is a student at Universitas Syiah Kuala, Faculty of Mathematics and Natural Sciences,
-            majoring in Informatics. His interests span across machine learning, natural language processing, and full-stack development. 
+            majoring in Informatics. His interests span across machine learning, natural language processing, and computer vision. 
             Passionate about research and real-world application, he continuously works on impactful personal and collaborative projects, 
             particularly in data science and software engineering.
           </motion.p>

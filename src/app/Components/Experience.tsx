@@ -26,7 +26,7 @@ const ExperienceSection = () => {
   
     return (
       <section id="experience" ref={ref} className="bg-gray-100 py-32">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto">
           {/* Judul */}
           <motion.h2
             initial={{ opacity: 0, y: 60 }}
