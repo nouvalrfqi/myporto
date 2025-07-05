@@ -92,6 +92,24 @@ export default function Projects() {
           </motion.div>
         ))}
       </div>
+      {/* Teks akhir */}
+      <motion.p
+        initial={{ opacity: 0, y: 60 }}
+        animate={inView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.8, delay: 0.6 + projects.length * 0.2 }}
+        className="text-sm text-gray-600 mt-20 text-center"
+      >
+        For more cool projects, check out my{' '}
+        <a
+          href="https://github.com/nouvalrfqi"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-orange-600 underline font-semibold hover:text-orange-800 transition"
+        >
+          GitHub
+        </a>
+        .
+      </motion.p>
     </section>
   );
 }
