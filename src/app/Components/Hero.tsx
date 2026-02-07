@@ -93,10 +93,11 @@ export default function Hero() {
             transition={{ duration: 1.0, delay: 0.4 }}
             className="text-lg leading-relaxed text-gray-700"
           >
-            Muhammad Nouval Rifqi is a student at Universitas Syiah Kuala, Faculty of Mathematics and Natural Sciences,
-            majoring in Informatics. His interests span across machine learning, natural language processing, and computer vision. 
-            Passionate about research and real-world application, he continuously works on impactful personal and collaborative projects, 
-            particularly in data science and software engineering.
+            Muhammad Nouval Rifqi is a student at Universitas Syiah Kuala, Faculty of Mathematics and Natural Sciences, majoring in Informatics. 
+            His interests span across machine learning, natural language processing, and computer vision. Passionate about research and real world 
+            application, he continuously works on impactful personal and collaborative projects, particularly in data science and data analytics. 
+            He also has strong interests in data engineering and business intelligence, with hands on experience in building analytical dashboards, data driven 
+            applications, and forecasting systems that transform raw data into structured, actionable insights.
           </motion.p>
 
           <motion.p

@@ -18,6 +18,14 @@ const experiences = [
         description:
           "Prepared and conducted database laboratory sessions by drafting materials, organizing practical resources, and ensuring necessary software availability. Guided students through fundamental database concepts and provided technical support during practice. Assisted students in understanding difficult concepts with additional explanations and one-on-one mentoring. Evaluated student competency levels and provided constructive feedback to support skill development.",
         tech: ["XAMPP", "Sql"]
+      },
+      {
+        date: "08/2024 – 01/2025",
+        role: "Business Intelligence",
+        company: "Semen Indonesia Group. Tbk",
+        description:
+          "Developed five analytical dashboards for SIG Group and its subsidiaries using Power BI, covering financial performance, cost structure, topline Mortar analysis (MKI, VUB, SBB), geospatial Opco mapping of major cement regions, and consolidated financial insights to identify profitability and business impact. Additionally, built a demand forecasting system for Ready Mix Concrete (RMC) using a SARIMAX model with exogenous variables (BI Rate, Inflation, Construction GDP, and Effective Working Days), integrated into a Streamlit analytical application to support data-driven planning.",
+        tech: ["Power BI", "Python", "Machine Learning"]
       }
 ];
 
