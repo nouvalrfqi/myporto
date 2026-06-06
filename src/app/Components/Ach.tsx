@@ -44,10 +44,10 @@ const dummyCertificates = [
 
 export default function CertificatesSection() {
     return (
-      <section id="certificates" className="px-6 md:px-12 py-24 bg-white">
-        <h2 className="text-4xl font-bold mb-16 max-w-7xl mx-auto">Achievements & Certificates</h2>
+      <section id="certificates" className="px-6 sm:px-10 md:px-16 lg:px-20 py-24 md:py-32 bg-white">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-10 sm:mb-16 max-w-7xl mx-auto">Achievements & Certificates</h2>
   
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-10 max-w-6xl mx-auto">
           {dummyCertificates.map((cert, index) => {
             const delay = index * 0.2
             const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.15 })
@@ -62,7 +62,7 @@ export default function CertificatesSection() {
                 className="bg-white shadow-lg rounded-2xl overflow-hidden"
               >
                 {/* Gambar sertifikat */}
-                <div className="relative w-full p-4 pb-0">
+                <div className="relative w-full p-2 sm:p-3 md:p-4 pb-0">
                   <div className="relative w-full h-0 pt-[70.85%]">
                     <Image
                       src={cert.image}
@@ -74,11 +74,11 @@ export default function CertificatesSection() {
                 </div>
   
                 {/* Informasi sertifikat */}
-                <div className="px-6 pt-4 pb-6 space-y-2">
-                  <p className="text-sm text-gray-500">{cert.date}</p>
-                  <h3 className="text-lg font-semibold">{cert.title}</h3>
-                  <p className="text-sm italic text-gray-600">Organized by {cert.organizer}</p>
-                  <p className="text-sm text-gray-700 mt-2 leading-relaxed">{cert.description}</p>
+                <div className="px-2 sm:px-4 md:px-6 pt-2 sm:pt-3 md:pt-4 pb-3 sm:pb-4 md:pb-6 space-y-1 sm:space-y-1.5 md:space-y-2">
+                  <p className="text-[10px] sm:text-xs md:text-sm text-gray-500">{cert.date}</p>
+                  <h3 className="text-xs sm:text-sm md:text-lg font-semibold leading-tight">{cert.title}</h3>
+                  <p className="text-[10px] sm:text-xs md:text-sm italic text-gray-600 leading-snug">Organized by {cert.organizer}</p>
+                  <p className="text-[10px] sm:text-xs md:text-sm text-gray-700 mt-1 sm:mt-2 leading-relaxed line-clamp-4 sm:line-clamp-6 md:line-clamp-none">{cert.description}</p>
                 </div>
               </motion.div>
             )

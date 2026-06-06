@@ -45,34 +45,34 @@ export default function Projects() {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
-    <section id="projects" ref={ref} className="px-6 md:px-12 py-32 bg-white text-black">
+    <section id="projects" ref={ref} className="px-6 sm:px-10 md:px-16 lg:px-20 py-24 md:py-32 bg-white text-black">
       <motion.h2
         initial={{ opacity: 0, y: 60 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.8,delay: 0.4 }}
-        className="text-3xl font-bold mb-12 max-w-7xl mx-auto"
+        transition={{ duration: 0.8, delay: 0.4 }}
+        className="text-2xl sm:text-3xl font-bold mb-8 sm:mb-12 max-w-7xl mx-auto"
       >
         Projects
       </motion.h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 lg:gap-12 max-w-7xl mx-auto">
         {projects.map((project, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, x: 80 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.6 + index * 0.2 }}
-            className="group space-y-4 relative pl-12"
+            className="group space-y-4 relative pl-10 sm:pl-12"
           >
             {/* Nomor urut dalam bulatan */}
             <div className="absolute left-0 top-0">
-              <div className="w-8 h-8 rounded-full bg-white text-black border border-black flex items-center justify-center font-bold text-sm opacity-50">
+              <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-white text-black border border-black flex items-center justify-center font-bold text-xs sm:text-sm opacity-50">
                 {index + 1}
               </div>
             </div>
 
             {/* Judul & deskripsi */}
-            <h3 className="text-lg font-semibold">{project.title}</h3>
+            <h3 className="text-base sm:text-lg font-semibold">{project.title}</h3>
             <p className="text-sm text-zinc-700">{project.description}</p>
 
             {/* Tech */}
@@ -97,7 +97,7 @@ export default function Projects() {
         initial={{ opacity: 0, y: 60 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8, delay: 0.6 + projects.length * 0.2 }}
-        className="text-sm text-gray-600 mt-20 text-center"
+        className="text-sm text-gray-600 mt-16 sm:mt-20 text-center"
       >
         For more cool projects, check out my{' '}
         <a
@@ -113,4 +113,3 @@ export default function Projects() {
     </section>
   );
 }
-
